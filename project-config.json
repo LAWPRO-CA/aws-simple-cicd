@@ -1,0 +1,47 @@
+{
+  "naming": {
+    "company": "lawpro",
+    "dept": "ca",
+    "project":  "titleplus"
+  },
+  "deployment": {
+    "region": "ca-central-1",
+    "cicdRoleName": "deployment-role",
+    "githubSecret": "github-token"
+  },
+  "accountIds": {
+    "cicd": "885244924985",
+    "dev": "634428439736",
+    "test": "",
+    "prod": ""
+  },
+  "sharedResources": {
+    "cicdBucket": "cicd"
+  },
+  "defaultRegions": {
+    "cicd": "ca-central-1",
+    "dev": "ca-central-1",
+    "test": "ca-central-1",
+    "prod": "ca-central-1"
+  },
+  "dogFood": [
+    {
+      "pipelineName": "cicd",
+      "repository": "aws-simple-cicd",
+      "branch": "master",
+      "type": "GitHub",
+      "owner": "LAWPRO-CA",
+      "targets": ["cicd"]
+    }
+  ],
+  "teamOne": [
+    {
+      "pipelineName": "portal",
+      "repository": "TI-Portal",
+      "branch": "master",
+      "type": "GitHub",
+      "owner": "LAWPRO-CA",
+      "secret": "github-token"
+    }
+  ]
+}

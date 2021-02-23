@@ -40,6 +40,8 @@ Resources:
         Statement:
           - Effect: Allow
             Action:
+              - 'codebuild:*'
+              - 'codepipeline:*'
               - 'cloudformation:*'
               - 'iam:*'
               - 'lambda:*'
@@ -48,6 +50,10 @@ Resources:
               - 'logs:*'
               - 'ec2:*'
               - 'ssm:*'
+              - 'sns:*'
+              - 's3:*'
+              - 'events:*'
+              - 'logs:*'
             Resource: '*'
       Roles:
         - !Ref DeploymentRole
