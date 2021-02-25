@@ -40,10 +40,10 @@ export class TestProject extends PipelineProject {
       environmentVariables: projectEnvironmentVars({ repoName, bucketName, bucketArn }),
       buildSpec: BuildSpec.fromObject({
         version: '0.2',
+        env: {
+          shell: 'bash'
+        },
         phases: {
-          env: {
-            shell: 'bash'
-          },
           install: {
             'runtime-versions': {
               nodejs: '10'
