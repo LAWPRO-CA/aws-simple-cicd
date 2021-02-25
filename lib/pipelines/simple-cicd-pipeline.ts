@@ -141,7 +141,7 @@ export class SimpleCicdPipeline extends Pipeline {
     const buildOutputArtifact = new Artifact('BuildArtifact')
     const buildRole = new CodeBuildRole(this, 'buildRole')
 
-    const buildProject = new BuildProject(this, `${prefix}-${repoName}-${repoBranch}-build`, {
+    const buildProject = new BuildProject(this, `${repoName}-${repoBranch}-build`, {
         repoName: repoName,
         role: buildRole,
         bucketArn: artifactsBucket.bucketArn,
@@ -178,7 +178,7 @@ export class SimpleCicdPipeline extends Pipeline {
     const testOutputArtifact = new Artifact('TestArtifact')
     const testRole = new CodeBuildRole(this, 'testRole')
 
-    const testProject = new TestProject(this, `${prefix}-${repoName}-${repoBranch}-test`, {
+    const testProject = new TestProject(this, `${repoName}-${repoBranch}-test`, {
         repoName: repoName,
         role: testRole,
         bucketArn: artifactsBucket.bucketArn,
@@ -216,7 +216,7 @@ export class SimpleCicdPipeline extends Pipeline {
         const deployRole = new CodeBuildRole(this, `${stageName}DeployRole`, { stageName })
         const deployProject = new DeployProject(
           this,
-          `${prefix}-${repoName}-${repoBranch}-${stageName}-deploy`,
+          `${repoName}-${repoBranch}-${stageName}-deploy`,
           {
             repoName: repoName,
             stageName: stageName,
