@@ -24,9 +24,9 @@
     "test": "ca-central-1",
     "prod": "ca-central-1"
   },
-  "dogFood": [
+  "simpleCicd": [
     {
-      "pipelineName": "cicd",
+      "pipelineName": "simple-cicd",
       "repository": "aws-simple-cicd",
       "branch": "master",
       "type": "GitHub",
@@ -34,7 +34,7 @@
       "targets": ["cicd"]
     }
   ],
-  "teamOne": [
+  "teamWilson": [
     {
       "pipelineName": "portal",
       "repository": "TI-Portal",

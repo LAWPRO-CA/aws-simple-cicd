@@ -72,8 +72,8 @@ export interface ProjectConfig {
     test: string,
     prod: string
   },
-  dogFood: Array<ProjectRepo>,
-  teamOne:  Array<ProjectRepo>
+  simpleCicd: Array<ProjectRepo>,
+  teamWilson:  Array<ProjectRepo>
 }
 
 const config = <ProjectConfig>configFile
