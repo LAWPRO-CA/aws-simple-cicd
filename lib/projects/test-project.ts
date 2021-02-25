@@ -41,6 +41,9 @@ export class TestProject extends PipelineProject {
       buildSpec: BuildSpec.fromObject({
         version: '0.2',
         phases: {
+          env: {
+            shell: 'bash'
+          },
           install: {
             'runtime-versions': {
               nodejs: '10'
