@@ -229,9 +229,9 @@ export class SimpleCicdPipeline extends Pipeline {
           target: new targets.LambdaFunction(emailHandler)
         })
 
-        if (stageName == 'prod') {
+        if (stageName == 'test') {
           this.addStage({
-            stageName: 'prod-approval',
+            stageName: 'test-approval',
             actions: [new ManualApprovalAction({
               actionName: 'Promote'
               })]
