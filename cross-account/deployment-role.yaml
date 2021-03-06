@@ -45,10 +45,11 @@ Resources:
         Statement:
           - Effect: Allow
             Action:
-
               - 'codebuild:*'
               - 'codepipeline:*'
               - 'cloudformation:*'
+              - 'cloudfront:*'
+              - 'apigateway:*'
               - 'iam:*'
               - 'sns:*'
               - 'cloudformation:*'

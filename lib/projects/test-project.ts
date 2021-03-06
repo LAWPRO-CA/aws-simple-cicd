@@ -46,7 +46,7 @@ export class TestProject extends PipelineProject {
         phases: {
           install: {
             'runtime-versions': {
-              nodejs: '10'
+              nodejs: 'latest'
             }
           },
           build: {
