@@ -42,6 +42,14 @@
       "type": "GitHub",
       "owner": "LAWPRO-CA",
       "secret": "github-token"
+    },
+    {
+      "pipelineName": "services",
+      "repository": "TI",
+      "branch": "srijit-cicd",
+      "type": "GitHub",
+      "owner": "LAWPRO-CA",
+      "secret": "github-token"
     }
   ]
 }
