@@ -23,7 +23,7 @@ import { BuildEnvironmentVariableType, ComputeType,
   LinuxBuildImage  } from '@aws-cdk/aws-codebuild'
 
 export const defaultEnvironment = {
-  buildImage: LinuxBuildImage.STANDARD_4_0,
+  buildImage: LinuxBuildImage.AMAZON_LINUX_2_3,
   computeType: ComputeType.SMALL,
   privileged: true
 }
