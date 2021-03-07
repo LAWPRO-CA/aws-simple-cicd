@@ -44,11 +44,6 @@ export class BuildProject extends PipelineProject {
           shell: 'bash',
         },
         phases: {
-          install: {
-            'runtime-versions': {
-              nodejs: 'latest'
-            }
-          },
           build: {
             commands: [
               'bash ${CODEBUILD_SRC_DIR}/scripts/build.sh'
