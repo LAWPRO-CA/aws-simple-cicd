@@ -48,8 +48,7 @@ export class DeployProject extends PipelineProject {
         phases: {
           install: {
             'runtime-versions': {
-              nodejs: 'latest',
-              dotnet: '3.1'
+              nodejs: 'latest'
             }
           },
           build: {
