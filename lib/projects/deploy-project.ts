@@ -49,7 +49,7 @@ export class DeployProject extends PipelineProject {
           install: {
             'runtime-versions': {
               nodejs: 'latest',
-              dotnet: 'latest'
+              dotnet: '5.0'
             }
           },
           build: {
