@@ -41,7 +41,7 @@ export class BuildProject extends PipelineProject {
       buildSpec: BuildSpec.fromObject({
         version: '0.2',
         env: {
-          shell: 'bash'
+          shell: 'bash',
         },
         phases: {
           install: {

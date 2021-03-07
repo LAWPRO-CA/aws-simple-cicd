@@ -65,6 +65,12 @@ export function projectEnvironmentVars(props: {
       type: BuildEnvironmentVariableType.PLAINTEXT,
       value: props.bucketArn
     },
+    DOTNET_ROOT: {
+      type: BuildEnvironmentVariableType.PLAINTEXT,
+      value: '/root/.dotnet'
+    },
     ...siteVars
   }
 }
+
+
