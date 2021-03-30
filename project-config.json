@@ -50,6 +50,14 @@
       "type": "GitHub",
       "owner": "LAWPRO-CA",
       "secret": "github-token"
+    },
+    {
+      "pipelineName": "database",
+      "repository": "TI-Database",
+      "branch": "main",
+      "type": "GitHub",
+      "owner": "LAWPRO-CA",
+      "secret": "github-token"
     }
   ]
 }
