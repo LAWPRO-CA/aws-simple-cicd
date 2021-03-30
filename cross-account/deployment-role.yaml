@@ -67,6 +67,8 @@ Resources:
               - 'secretsmanager:*'
               - 'logs:*'
               - 'route53:*'
+              - 'rds:*'
+              - 'kms:*'
             Resource: '*'
       Roles:
         - !Ref DeploymentRole
