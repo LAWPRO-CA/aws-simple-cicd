@@ -46,7 +46,7 @@
     {
       "pipelineName": "services",
       "repository": "TI",
-      "branch": "srijit-cicd",
+      "branch": "master",
       "type": "GitHub",
       "owner": "LAWPRO-CA",
       "secret": "github-token"
