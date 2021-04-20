@@ -38,7 +38,7 @@
     {
       "pipelineName": "portal",
       "repository": "TI-Portal",
-      "branch": "srijit-cicd",
+      "branch": "master",
       "type": "GitHub",
       "owner": "LAWPRO-CA",
       "secret": "github-token"
