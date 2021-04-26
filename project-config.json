@@ -13,7 +13,7 @@
     "cicd": "885244924985",
     "dev": "634428439736",
     "test": "413287561857",
-    "prod": "383703726779"
+    "prod": ""
   },
   "sharedResources": {
     "cicdBucket": "cicd"
