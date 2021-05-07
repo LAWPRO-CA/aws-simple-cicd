@@ -31,7 +31,8 @@
       "branch": "master",
       "type": "GitHub",
       "owner": "LAWPRO-CA",
-      "targets": ["cicd"]
+      "targets": ["cicd"],
+      "cron": "0 2 * * 7"
     }
   ],
   "teamWilson": [
