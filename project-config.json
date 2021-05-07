@@ -32,7 +32,7 @@
       "type": "GitHub",
       "owner": "LAWPRO-CA",
       "targets": ["cicd"],
-      "cron": "0 2 * * 7"
+      "cron": "0 2 * * 7 *"
     }
   ],
   "teamWilson": [
