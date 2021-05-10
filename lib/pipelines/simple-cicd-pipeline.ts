@@ -229,15 +229,15 @@ export class SimpleCicdPipeline extends Pipeline {
           target: new targets.LambdaFunction(emailHandler)
         })
 
-        // Disabling manual approvals
-        // if (stageName == 'test' || stageName == 'prod') {
-        //   this.addStage({
-        //     stageName: `${stageName}-approval`,
-        //     actions: [new ManualApprovalAction({
-        //       actionName: 'Promote'
-        //       })]
-        //   })
-        // }
+        // Enabling manual approvals
+        if (stageName == 'prod') {
+          this.addStage({
+            stageName: `${stageName}-approval`,
+            actions: [new ManualApprovalAction({
+              actionName: 'Promote'
+              })]
+          })
+        }
 
         const moduleDeployOutputArtifact = new Artifact()
         const moduleDeployAction = new CodeBuildAction({
