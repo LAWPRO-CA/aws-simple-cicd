@@ -36,7 +36,7 @@ export class SemverHandlerStack extends cdk.Stack {
     // Provision Lambda Layer
     const pythonLayer = new lambda.LayerVersion(this, 'python3Layer', {
       code: lambda.Code.fromAsset('./lambda-helpers/layers/python3_layer.zip'),
-      compatibleRuntimes: [lambda.Runtime.PYTHON_3_6, lambda.Runtime.PYTHON_3_7, lambda.Runtime.PYTHON_3_8],
+      compatibleRuntimes: [lambda.Runtime.PYTHON_3_6, lambda.Runtime.PYTHON_3_7, lambda.Runtime.PYTHON_3_9],
       description: 'A Python layer with Semver',
       layerVersionName: `${props.prefix}-cicd-python3-layer`
     });
@@ -46,7 +46,7 @@ export class SemverHandlerStack extends cdk.Stack {
       code: lambda.Code.fromAsset('./lambda-helpers/semver-handler'),
       functionName: `${props.prefix}-cicd-semverHandler`,
       handler: 'lambda.semver_handler',
-      runtime: lambda.Runtime.PYTHON_3_8,
+      runtime: lambda.Runtime.PYTHON_3_9,
       layers: [ pythonLayer ],
       logRetention: logs.RetentionDays.TWO_WEEKS,
       environment: {
