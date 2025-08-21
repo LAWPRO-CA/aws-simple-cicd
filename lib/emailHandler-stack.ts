@@ -39,7 +39,7 @@ export class EmailHandlerStack extends cdk.Stack {
       code: lambda.Code.fromAsset('./lambda-helpers/email-handler'),
       functionName: `${props.prefix}-cicd-emailHandler`,
       handler: 'lambda.send_codebuild_events_to_sns',
-      runtime: lambda.Runtime.PYTHON_3_8,
+      runtime: lambda.Runtime.PYTHON_3_9,
       logRetention: logs.RetentionDays.TWO_WEEKS,
       environment: {
         "SSM_ROOT": props.ssmRoot,
